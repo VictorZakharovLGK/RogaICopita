@@ -1,0 +1,49 @@
+body {
+    background-color: azure;
+}
+h1 {
+    color: gray;
+    size: 200%;
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+}
+h2 {
+    color:darkgray;
+    size: 150%;
+    font-family:'Times New Roman', Times, serif;
+    font-style:oblique;
+}
+img.mox {
+    padding: 3px;
+    border: 3px dotted blue;
+}
+a {
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:cornflowerblue;
+    font-size: 92%;
+}
+ul {
+    padding: 0;
+    margin: .5rem;
+    text-align: center;
+}
+li { display:inline; }
+li a { white-space: nowrap; }
+li:after {
+  content: " ";
+}
+li:before {
+    content: url(../img/Preview/4o41.gif);
+    color: red;
+    font-size: 100%;
+}
+.this {
+    color:rgb(24, 35, 201);
+}
+.borderr {
+    border-bottom: 3px;
+    border-bottom-color: black;
+    border-bottom-style:solid;
+    padding: 7px;
+}

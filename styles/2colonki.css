@@ -1,0 +1,27 @@
+.layout { width: 980px; margin: auto; }
+.sidebar {
+ background: #C6DD7D; /* Цвет фона */
+ width: 280px; /* Ширина колонки */
+ float: right; /* Обтекание слева */
+}
+.content {
+ background: #F4ECCE; /* Цвет фона */
+ margin-right: 0px; /* Отступ справа */
+ position: relative, top -50px;
+}
+.menuu {
+    background: #c5c35b;
+    border: 3px;
+    border-color: #4e4e43;
+    border-style: dotted;
+}
+body {
+    background-color: #F4ECCE;
+}
+.footer {
+    position: relative, top -77px;
+    background: #c7bfa4;
+    border: 3px;
+    border-color: #4e4e43;
+    border-style: dotted;
+}
