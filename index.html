@@ -5,17 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рога и копыта</title>
+    <link rel="stylesheet" href="./styles/2colonki.css">
 </head>
 <link rel="shortcut icon" href="./img/Preview/favicon.png" type="image/x-icon">
 <body>
-    <table Width="100%" border="2" cellpadding="5" cellspacing="0">
-        <tr>
-    <h1 align="center">Компания "Рога и копыта."</h1>
-    <h2 align="center">  Мы работаем для вас.</h2>
-        </tr>
-    </table>
-    <big><strong><p align="center">| Главная | <a href = "info/about.html">О компании</a> | <a href = "info/employee.html">Наши сотрудники</a> | <a href="info/education.html">Обучение</a> | <a href="info/gallery.html">Галерея</a> | <a href="info/order.html">Оформить заказ</a> |</p></strong></big><br>
-    <hr><p align="center">На рынке рогов и копыт с 1931 года.</p></hr><br>
-    <hr><em><p align="center">© Бендер и компания</p></em></hr>
+<div class="main">
+    <div class="header">
+        <div class="Company">
+            <img src="./img/fullimg/main.png" width="100px" height="100px" class="icon">
+            <h1>Компания "Рога и копыта."</h1>
+            <h2>  Мы работаем для вас.</h2>
+        </div>
+        <div class="menu">
+            <ul class="buter"><img src="./img/fullimg/buter.png" width="20px" height="20px">
+            <ul class="topmenu">
+                <li class="menu">Прочее
+                <ul class="submenu">
+                    <li><a href = "info/education.html" target="slaid">Обучение</a></li>
+                    <li><a href = "https://мвд.рф/" target="_blank">Мы чтим уголовный кодекс</a></li>
+                    <li><a href = "info/font.html" target="slaid">Текст</a></li>
+                </ul></li>
+            </ul>
+            <ul class="topmenu">
+                <li class="menu">Медиа
+                <ul class="submenu">
+                    <li><a href = "info/gallery.html" target="slaid">Галерея</a></li>
+                    <li><a href = "info/video.html" target="slaid">Видео и Аудио</a></li>
+                </ul></li>
+            </ul>
+            <ul class="topmenu">
+                <li class="menu">Информация
+                <ul class="submenu">
+                    <li><a href = "info/employee.html" target="slaid">Наши сотрудники</a></li>
+                    <li><a href = "info/about.html" target="slaid">О компании</a></li>
+                </ul></li>
+            </ul>
+            <ul class="topmenu">
+                <li class="menu">Заказ
+                <ul class="submenu">
+                    <li><a href = "info/order.html" target="slaid">Оформить заказ</a></li>
+                </ul></li>
+            </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="sidebar" align="left">
+        <big><strong><p align="center">
+            <ul>
+                <li class="slaid"><a href = "info/about.html" target="slaid">О компании</a></li> 
+                <li class="slaid"><a href = "info/employee.html" target="slaid">Наши сотрудники</a></li> 
+                <li class="slaid"><a href = "info/education.html" target="slaid">Обучение</a></li> 
+                <li class="slaid"><a href = "info/order.html" target="slaid">Оформить заказ</a></li>
+                <li class="slaid"><a href = "info/font.html" target="slaid">Текст</a></li>
+                <li class="slaid"><a href = "https://мвд.рф/" target="_blank">Мы чтим уголовный кодекс</a></li>
+                <ul class="vmenu">
+                    <li class="vmenu">Медиа
+                    <ul class="vsubmenu">
+                        <li><a href="./info/gallery.html" target="slaid">Галерея</a></li>
+                        <li><a href="./info/video.html" target="slaid">Виде и аудио</a></li>
+                    </ul></li>
+                </ul>
+            </ul>
+        </p></strong></big>
+    </div>
+    <br>
+    <div>
+        <iframe name="slaid" class="content" src="./info/about.html" ></iframe>
+    </div>
+    <div class="footer">
+    <p align="center">На рынке рогов и копыт с 1931 года.</p>
+    <em><p align="center">© Бендер и компания</p></em>
+    </div>  
+</div>
 </body>
 </html>

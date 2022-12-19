@@ -1,0 +1,5 @@
+tr.red {background-color: rgb(212, 0, 0);color:rgb(223, 221, 221);}
+table.blue {border-color: rgb(47, 211, 226);border-collapse: collapse;}
+tr.blue {color: rgb(3, 178, 194);}
+th:hover {visibility: hidden;}
+td:hover {visibility: hidden;}
