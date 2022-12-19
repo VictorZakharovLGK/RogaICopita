@@ -1,27 +1,220 @@
-.layout { width: 980px; margin: auto; }
+A:link { text-decoration: solid; color:black; font-family:Arial, Helvetica, sans-serif;}
+A:visited { text-decoration: solid; color:black; font-family:Arial, Helvetica, sans-serif;}
+A:active { text-decoration: solid; color:black; font-family:Arial, Helvetica, sans-serif;}
+A:hover {text-decoration: none;color: rgb(63, 168, 42);margin-left: 10px;font-size: 110%;}
+li.slaid:hover {list-style-type: circle;background-color: #3d413177;}
+.layout { width: 1180px; margin: 0;}
 .sidebar {
- background: #C6DD7D; /* Цвет фона */
- width: 280px; /* Ширина колонки */
- float: right; /* Обтекание слева */
+    background: linear-gradient(rgba(189,221,125,0.85), rgba(149, 241, 125, 0.85), rgba(169,211,125,0.85)); /* Цвет фона */
+    width: 195px; /* Ширина колонки */
+    float: right; /* Обтекание слева */
+    border-radius: 10px 10px 10px 10px; /* Закругление углов */
+    margin-top: 20px;
+    padding-bottom: 490px;
+    margin-right: 0px;
+    position: absolute;
+    transition: 0.5s;
+    margin-left: 85%;
+    margin-right: 5%;
 }
 .content {
- background: #F4ECCE; /* Цвет фона */
- margin-right: 0px; /* Отступ справа */
- position: relative, top -50px;
+    background: #F4ECCE; /* Цвет фона */
+    margin-right: 50px; /* Отступ справа */
+    position: relative, top -50px;
+    width: 78%;
+    margin-left: 110px;
+    margin-bottom: 10px;
+    height: 800px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.86);
+    box-shadow: 0 0 10px rgba(0,0,0,0.86);
 }
-.menuu {
-    background: #c5c35b;
-    border: 3px;
+.header {
+    background: linear-gradient(#F4ECCE, #4e4e43, #c5c35b);
+    border: 4px;
     border-color: #4e4e43;
     border-style: dotted;
+    border-radius: 10px 10px 0 0;
+    border-bottom: none;
+    width: 90%;
+    margin-left: 110px;
+    padding-bottom: 5px;
+    height: 120px;
+}
+.Company {
+    width: 590px;
+    position: relative;
+    float: left;
 }
 body {
-    background-color: #F4ECCE;
+    background-image: url(../img/fullimg/BackGroundMain.jpg);
+    background-size: cover;
 }
 .footer {
     position: relative, top -77px;
-    background: #c7bfa4;
-    border: 3px;
+    background: radial-gradient(#c7bfa4, #a89f81, #adac6c);
+    border: 4px;
     border-color: #4e4e43;
     border-style: dotted;
+    border-radius: 0 0 10px 10px;
+    border-top: none;
+    width: 90%;
+    margin-left: 110px;
+    padding-top: 5px;
+}
+.icon {
+    position: relative, top 50px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 50px;
+    float: left;
+}
+li.slaid {list-style-type: disc;background-color: #3135239c;border-radius: 10px 10px 10px 10px;margin-top: 5px;padding-left: 5px;margin-right: 15px;}
+ul.buter {position: relative; right: 35px; bottom: 35px; width: 20px; height: 20px;}
+ul.topmenu {
+    width: 440px;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+li.menu {
+    width: 150px;
+    padding: 5px;
+    background-color: #c5c35b;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.86);
+    box-shadow: 0 0 10px rgba(0,0,0,0.86);
+    float:right;
+    margin-top: 77px;
+    margin-right: 10px;
+    font-size: 17px;
+    display: none;
+}
+ul.buter:hover ul.topmenu{
+    visibility: visible;
+}
+ul.buter:hover div.header {
+    padding-bottom: 130px;
+}
+li.menu:hover {
+    color: rgb(63, 168, 42);
+}
+div.menu ul.topmenu {
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+    background-color: #c5c35b;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.86);
+    box-shadow: 0 0 10px rgba(0,0,0,0.86);
+}
+div.menu {
+    z-index: 100;
+}
+div.menu ul.submenu {
+    list-style: none;
+    margin: 0px;
+    padding: 2px;
+    background-color: #c5c35b;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.86);
+    box-shadow: 0 0 10px rgba(0,0,0,0.86);
+}
+div a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+.topmenu {
+    backface-visibility: hidden;
+    background: rgba(255,255,255,0.7);
+}
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+.down:after {
+    content: "\f107";
+    margin-left: 8px;
+    font-family: FontAwesome;
+}
+.topmenu li a:hover { color: rgb(63, 168, 42); }
+.submenu {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 200px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+}
+.topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+  .submenu li a {
+    color: black;
+    font-size: 17px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul.vmenu {
+    width: 90%; /* Ширина меню */
+    list-style: none; /* Для списка убираем маркеры */
+    margin: 0; /* Нет отступов вокруг */
+    padding: 0; /* Убираем поля вокруг текста */
+    font-family: Arial, sans-serif; /* Рубленый шрифт для текста меню */
+    font-size: 14pt; /* Размер названий в пункте меню */
+}
+li.vmenu {
+    list-style-type: disc;background-color: #3135239c;border-radius: 10px 10px 10px 10px;margin-top: 5px;padding-left: 5px;
+}
+li.vmenu:hover {
+    list-style-type: circle;background-color: #3d413177;
+    color: rgb(63, 168, 42);padding-left: 10px;
+    transition: 0.5s;
+}
+li.vmenu ul {
+position: absolute; /* Подменю позиционируются абсолютно */
+display: none; /* Скрываем подменю */
+}
+li.vmenu a {
+    list-style-type: disc;background-color: #3135239c;border-radius: 10px 10px 10px 10px;margin-top: 5px;padding-left: 5px;
+}
+ul.vsubmenu li a:hover {
+    text-decoration: none;color: rgb(63, 168, 42);padding-left: 10px;font-size: 110%;
+    list-style-type: circle;background-color: #3d413177;
+}
+li.vmenu:hover ul {
+display: block; /* При выделении пункта курсором мыши отображается
+подменю */
+}
+
+@media screen and (min-width:640px) {
+    div.menu {display: none;}
+    ul.buter {display: none;}
+}
+@media screen and (max-width: 1000px) {
+    ul.buter {display: block;}
+    div.sidebar {display: none;}
+    div.menu {display: block; padding-right: 0px;}
+    div.header {background: linear-gradient(#8b856e, #f5f58b, #8b8a2c); width: 98%; margin-left: 0; margin-right: 0;}
+    iframe.content {background-color: #c2a854;width: 98%; margin-left: 0; margin-right: 0; margin-top: -160px;}
+    div.footer {background: radial-gradient(#c5b273, #f8e195, #c9c76b); width: 98%; margin-left: 0; margin-right: 0;}
+    li.menu {width: 95%; margin-top: 5px;}
+    .submenu {width: 100%;left: 10px;}
+}
+@media screen and (max-width: 640px) {
+    div.header {width: 98%; margin-left: 0px; margin-right: 0px; margin-bottom: -10px;}
+    div.Company {width: 82%; font-size: 10pt;}
+    div.footer {width: 98%; margin-left: 0px; margin-right: 0px; height: 50px; font-size: 5pt;}
+    iframe.content {width: 99%; margin-left: 0px; margin-right: 0px; height: 410px; margin-bottom: 5px;margin-top: -160px;}
+    div.sidebar {display: none;}
+    li.menu {width: 95%; margin-top: 5px;}
+    .submenu {width: 100%;left: 10px;}
+    ul.buter {display: block;}
+    .icon {margin-right: 5px;}
 }
